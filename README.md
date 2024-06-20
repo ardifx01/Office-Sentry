@@ -22,14 +22,14 @@ Untuk menjalankan aplikasi ini di server lokal, ikuti langkah-langkah berikut:
    ```bash
    git clone https://github.com/yourusername/office-sentry.git
 
-2. **Install Dependencies
+2. **Install Dependencies**
    ```bash
    composer install
    
-3. Setup Database
--    Buat database di MySQL via PHPMyAdmin.
--    Salin .env.example menjadi .env dan atur konfigurasi database.
--    Jalankan Migrasi :
+3. **Setup Database**
+- Buat database di MySQL via PHPMyAdmin.
+- Salin .env.example menjadi .env dan atur konfigurasi database.
+- Jalankan Migrasi :
    ```bash
    php artisan migrate
 
