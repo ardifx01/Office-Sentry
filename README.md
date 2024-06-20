@@ -29,7 +29,7 @@ Untuk menjalankan aplikasi ini di server lokal, ikuti langkah-langkah berikut:
 3. Setup Database
 -    Buat database di MySQL via PHPMyAdmin.
 -    Salin .env.example menjadi .env dan atur konfigurasi database.
--    Jalankan Migrasi
+-    Jalankan Migrasi :
    ```bash
    php artisan migrate
 
