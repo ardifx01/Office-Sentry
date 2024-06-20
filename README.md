@@ -27,9 +27,9 @@ Untuk menjalankan aplikasi ini di server lokal, ikuti langkah-langkah berikut:
    composer install
    
 3. Setup Database
-▪️    Buat database di MySQL via PHPMyAdmin.
-▪️    Salin .env.example menjadi .env dan atur konfigurasi database.
-▪️    Jalankan Migrasi
+-    Buat database di MySQL via PHPMyAdmin.
+-    Salin .env.example menjadi .env dan atur konfigurasi database.
+-    Jalankan Migrasi
    ```bash
    php artisan migrate
 
