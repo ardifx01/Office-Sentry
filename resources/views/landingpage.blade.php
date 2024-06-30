@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="" class="bg-slate-900">
+<html lang="en" data-theme="" class="">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OfiiceSentry</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="/resources/css/style.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link href="/resources/css/app.css" rel="stylesheet">
 </head>
 
-<body class="container m-auto">
+<body class="container m-auto bg-white dark:bg-slate-900">
     <!-- Header Section Start -->
     <header>
         <div class="container m-auto">
@@ -50,6 +49,19 @@
                                 </ul>
                             </div>
                         </div>
+                        <button id="theme-toggle" type="button"
+                            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
                     </div>
                     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 transition duration-300 ease-in-out"
                         id="navbar-sticky">
@@ -102,12 +114,15 @@
         </div>
     </section>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
-        class="absolute bottom-12 left-0 right-0 transform translate-y-1/2">
+    <!-- Wave Start -->
+    {{-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+        class="absolute bottom-12 left-0 right-0 transform translate-y-1/2 bg-white dark:bg-slate-900">
         <path fill="#0f172a" fill-opacity="1"
             d="M0,160L48,154.7C96,149,192,139,288,144C384,149,480,171,576,186.7C672,203,768,213,864,202.7C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
         </path>
-    </svg>
+    </svg> --}}
+    <!-- Wave End -->
+
     <!-- Hero Section End -->
 
     <section id="" class="pt-24 pb-14">
@@ -203,7 +218,9 @@
     <section id="features" class="py-36 bg-transparent sm:py-36 lg:py-36">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="text-center">
-                <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl xl:text-5xl font-pj">Our Features
+                <h2
+                    class="text-3xl font-bold leading-tight dark:text-white text-gray-900 sm:text-4xl xl:text-5xl font-pj">
+                    Our Features
                 </h2>
                 <p class="mt-4 text-base leading-7 text-white sm:mt-8 font-pj"></p>
             </div>
@@ -333,7 +350,7 @@
     </svg> --}}
 
     <!-- Footer Section Start -->
-    <section id="contact" class="pt-24 pb-24 m-auto">
+    <section id="contact" class="pt-24 pb-24 m-auto shadow-md">
         <div class="absolute left-0 right-0 transform translate-y-1/2">
             <footer class="bg-white dark:bg-slate-950">
                 <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
