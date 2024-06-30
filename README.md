@@ -1,3 +1,43 @@
+# Office Sentry
+
+## Deskripsi
+Office Sentry adalah aplikasi berbasis web yang dirancang untuk mengoptimalkan manajemen dan monitoring kinerja office boy di lingkungan kerja. Aplikasi ini memungkinkan pengguna untuk melacak kehadiran, aktivitas, dan efisiensi office boy secara real-time, memberikan laporan mendetail dan analisis kinerja untuk meningkatkan operasional perusahaan.
+
+## Fitur Utama
+- **Perizinan Keluar Masuk**: Memungkinkan office boy untuk mengajukan izin keluar dan masuk dengan merekam waktu keluar dan masuk secara otomatis.
+- **Monitoring Aktivitas**: Catat dan pantau aktivitas harian office boy untuk memastikan semua tugas terlaksana dengan baik.
+- **Laporan Real-Time**: Dapatkan laporan real-time mengenai aktivitas dan kinerja office boy, memudahkan evaluasi dan pengambilan keputusan.
+- **Manajemen Office Boy**: Kelola data office boy, termasuk jadwal, tugas harian, dan informasi pribadi.
+
+## Teknologi yang Digunakan
+- **Front-end**: HTML, CSS, Tailwind CSS
+- **Back-end**: PHP, Laravel
+- **Database**: MySQL (via PHPMyAdmin)
+- **Tools Lainnya**: Git untuk version control
+
+## Cara Instalasi
+Untuk menjalankan aplikasi ini di server lokal, ikuti langkah-langkah berikut:
+
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/yourusername/office-sentry.git
+
+2. **Install Dependencies**
+   ```bash
+   composer install
+   
+3. **Setup Database**
+- Buat database di MySQL via PHPMyAdmin.
+- Salin .env.example menjadi .env dan atur konfigurasi database.
+- Jalankan Migrasi :
+   ```bash
+   php artisan migrate
+
+4. Jalankan Server Lokal
+   ```bash
+   php artisan serve
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
