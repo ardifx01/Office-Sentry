@@ -9,7 +9,7 @@
     <link href="/resources/css/app.css" rel="stylesheet">
 </head>
 
-<body class="container m-auto bg-white dark:bg-slate-900">
+<body class="container m-auto bg-gray-200 dark:bg-slate-900">
     <!-- Header Section Start -->
     <header>
         <div class="container m-auto">
@@ -24,6 +24,19 @@
                         <a href="/login" type="button"
                             class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-8 py-2.5 text-center me-2">Login
                         </a>
+                        <button id="theme-toggle" type="button"
+                            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
                         <button id="burger-menu" type="button"
                             class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                             aria-controls="navbar-sticky" aria-expanded="false">
@@ -49,19 +62,6 @@
                                 </ul>
                             </div>
                         </div>
-                        <button id="theme-toggle" type="button"
-                            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-                            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                            </svg>
-                            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                                    fill-rule="evenodd" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
                     </div>
                     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 transition duration-300 ease-in-out"
                         id="navbar-sticky">
@@ -240,7 +240,7 @@
                             stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
-                    <h3 class="mt-12 text-xl font-bold text-white font-pj">Pemantauan Real-Time</h3>
+                    <h3 class="mt-12 text-xl font-bold dark:text-white text-gray-900 font-pj">Pemantauan Real-Time</h3>
                     <p class="mt-5 text-base text-gray-600 font-pj"> Dapatkan update instan mengenai tugas dan lokasi
                         office boy Anda. Dengan Office Sentry, Anda selalu dalam kendali penuh.</p>
                 </div>
@@ -254,7 +254,8 @@
                         <path d="M19 1C9.059 1 1 9.059 1 19H19V1Z" fill="#D4D4D8" stroke="#ffffff" stroke-width="2"
                             stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    <h3 class="mt-12 text-xl font-bold text-white font-pj">Pengaturan Tugas Otomatis</h3>
+                    <h3 class="mt-12 text-xl font-bold dark:text-white text-gray-900 font-pj">Pengaturan Tugas Otomatis
+                    </h3>
                     <p class="mt-5 text-base text-gray-600 font-pj">Lupakan pengaturan tugas manual yang memakan waktu.
                         Sistem kami memungkinkan penugasan otomatis berdasarkan algoritma canggih yang memastikan
                         distribusi kerja yang adil dan efisien.</p>
@@ -272,7 +273,7 @@
                         <path d="M35 7H24V35H35V7Z" fill="#D4D4D8" stroke="#ffffff" stroke-width="2"
                             stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    <h3 class="mt-12 text-xl font-bold text-white font-pj">Pelaporan Terperinci</h3>
+                    <h3 class="mt-12 text-xl font-bold dark:text-white text-gray-900font-pj">Pelaporan Terperinci</h3>
                     <p class="mt-5 text-base text-gray-600 font-pj">Setiap office boy wajib mengirimkan bukti
                         pekerjaan. Foto-foto tersebut akan tersimpan dalam sistem dan dapat diakses kapan saja,
                         memberikan transparansi total dalam setiap aspek operasional.</p>
@@ -295,7 +296,8 @@
                             stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
-                    <h3 class="mt-12 text-xl font-bold text-white font-pj">Reset dan Penugasan Ulang Otomatis</h3>
+                    <h3 class="mt-12 text-xl font-bold dark:text-white text-gray-900 font-pj">Reset dan Penugasan Ulang
+                        Otomatis</h3>
                     <p class="mt-5 text-base text-gray-600 font-pj">Sistem kami secara otomatis mereset tugas setiap
                         hari, memastikan bahwa setiap hari adalah awal yang baru, dengan tugas-tugas yang terorganisir
                         dengan baik.</p>
@@ -313,7 +315,8 @@
                             stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
-                    <h3 class="mt-12 text-xl font-bold text-white font-pj">Interface yang Ramah Pengguna</h3>
+                    <h3 class="mt-12 text-xl font-bold dark:text-white text-gray-900 font-pj">Interface yang Ramah
+                        Pengguna</h3>
                     <p class="mt-5 text-base text-gray-600 font-pj">Desain aplikasi kami intuitif, memudahkan setiap
                         anggota tim Anda untuk mengadaptasi dan menggunakan Office Sentry dengan efektif.</p>
                 </div>
@@ -332,7 +335,8 @@
                         {{-- <path d="M28 1H37V10" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10"
                         stroke-linecap="round" stroke-linejoin="round" /> --}}
                     </svg>
-                    <h3 class="mt-12 text-xl font-bold text-white font-pj">Analisis Kinerja Canggih</h3>
+                    <h3 class="mt-12 text-xl font-bold dark:text-white text-gray-900 font-pj">Analisis Kinerja Canggih
+                    </h3>
                     <p class="mt-5 text-base text-gray-600 font-pj">Dengan fitur Analisis Kinerja kami, Anda dapat
                         mengukur efektivitas operasional tim office boy Anda melalui berbagai metrik dan laporan yang
                         komprehensif.</p>
@@ -350,10 +354,10 @@
     </svg> --}}
 
     <!-- Footer Section Start -->
-    <section id="contact" class="pt-24 pb-24 m-auto shadow-md">
+    <section id="contact" class="pt-24 pb-24 m-auto">
         <div class="absolute left-0 right-0 transform translate-y-1/2">
-            <footer class="bg-white dark:bg-slate-950">
-                <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <footer class="bg-gray-300 dark:bg-slate-950">
+                <div class="w-full p-24 py-6 lg:py-8 shadow-lg">
                     <div class="md:flex md:justify-between">
                         <div class="mb-6 md:mb-0">
                             <a href="#" class="flex items-center">
