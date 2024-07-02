@@ -29,7 +29,7 @@ Untuk menjalankan aplikasi ini di server lokal, ikuti langkah-langkah berikut:
 3. **Setup Database**
 - Buat database di MySQL via PHPMyAdmin.
 - Salin .env.example menjadi .env dan atur konfigurasi database.
-- import kode database yang sudah disiapkan di file database (office-sentry.sql) ke phpmyadmin menggunakan sql
+- import kode database yang sudah disiapkan di file database (office-sentry.sql) ke database yang telah dibuat di MySQL via PHPMyAdmin menggunakan sql
 - tidak perlu menjalankan perintah migrate database
 
 4. **Jalankan Server Lokal**
